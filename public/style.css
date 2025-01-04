@@ -83,9 +83,16 @@ a:hover {
     
 }
 
+.album-art {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    float: left;
+}
+
 .now-playing {
     display: flex;
-    align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
     
@@ -94,6 +101,9 @@ a:hover {
 .song-info {
     font-size: 0.875rem;
     line-height: 1.2;
+}
+.song-info a {
+    text-decoration: none;
 }
 
 .links {
@@ -104,7 +114,6 @@ a:hover {
 .links a {
     font-size: 0.875rem;
     color: #4c4f69;
-    text-decoration: none;
 }
 
 .recent {
