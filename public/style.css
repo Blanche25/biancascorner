@@ -18,7 +18,6 @@ body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--base);
     background-image: url(assets/15.png);
-    background-size: 100%;
     background-repeat: no-repeat;
     color: var(--text);
     margin: 0;
