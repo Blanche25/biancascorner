@@ -6,11 +6,11 @@ const posts = [
 // Function to fetch directory listing
 async function fetchDirectoryListing() {
     try {
-        const response = await fetch('/posts/');
-        const text = await response.text();
-        return text;
+        const response = await fetch('/posts/posts.json');
+        const json = await response.json();
+        return json;
     } catch (error) {
-        console.error('Error fetching directory:', error);
+        console.error('Error fetching post list:', error);
         return null;
     }
 }
