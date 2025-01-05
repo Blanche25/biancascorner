@@ -145,3 +145,20 @@ a:hover {
     float: left;
     margin-right: 1rem;
 }
+
+.webrings {
+    margin: auto;
+    width: fit-content;
+}
+
+.buttonwall {
+    margin: auto;
+    padding: 0.5rem;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttonwall img {
+    margin: 0.2rem;
+}
