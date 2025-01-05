@@ -1,6 +1,6 @@
 // Manually specify the post filenames
 const posts = [
-    "01-oh hey i have a website now.html"
+    "01-oh_hey_i_have_a_website_now.html"
 ];
 
 // Function to fetch directory listing
