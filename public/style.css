@@ -9,15 +9,15 @@
 @font-face {
     font-family: 'Iosevka';
     src: url('assets/fonts/Iosevka-Regular.ttf') format('truetype');
-    font-weight: normal; /* or bold, if applicable */
-    font-style: normal;  /* or italic, if applicable */
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--base);
-    background-image: url(assets/15.png);
+    background-image: url(assets/background.jpg);
     background-repeat: no-repeat;
     color: var(--text);
     margin: 0;
@@ -38,6 +38,10 @@ h1 {
 h2 {
     font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+li {
     margin-bottom: 1rem;
 }
 
@@ -135,8 +139,8 @@ a:hover {
 .squares {
     background-image: radial-gradient(circle, var(--text) 0.09rem, transparent 1px),
                       radial-gradient(circle,var(--text) 0.09rem, transparent 1px);
-    background-size: 20px 20px; /* Adjust the size of the grid */
-    padding: 1rem; /* Optional: Add some padding inside the element */
+    background-size: 20px 20px;
+    padding: 1rem;
 }
 
 .pfp {
