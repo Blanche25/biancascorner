@@ -37,8 +37,11 @@
 
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /*
     background-color: var(--base);
-    background-repeat: no-repeat;
+    */
+    background-image: url(assets/pattern.svg);
+    background-repeat:repeat;
     color: var(--text);
     margin: 0;
     padding: 2rem;
@@ -124,7 +127,7 @@ hr {
 
 .footer-text {
     font-size: 0.75rem;
-    color: #999;
+    color: var(--overlay2);
     margin-top: 2rem;
     text-align: center;
 }
