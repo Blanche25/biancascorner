@@ -162,6 +162,7 @@ hr {
 .recent {
     font-size: 0.875rem;
     margin-top: 0px;
+    display: block;
 }
 
 .recent-frame {

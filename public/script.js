@@ -1,6 +1,6 @@
 const posts = [
-    { title: "01-oh hey i have a website now", date: "2025-01-03", file: "01-oh hey i have a website now.html" },
-    { title: "02-when the house leaves or smth", date: "2025-01-05", file: "02-when the house leaves or smth.html" }
+    { title: "oh hey i have a website now", date: "2025-01-03", file: "oh hey i have a website now.html" },
+    { title: "when the house leaves or smth", date: "2025-01-05", file: "when the house leaves or smth.html" }
 ];
 
 async function getRecentPosts() {
