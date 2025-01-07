@@ -161,8 +161,12 @@ hr {
 
 .recent {
     font-size: 0.875rem;
+    margin-top: 0px;
+}
+
+.recent-frame {
     margin-top: 1rem;
-    
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
