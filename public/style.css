@@ -1,9 +1,30 @@
 :root {
-    --text: #4c4f69;
-    --base: #eff1f5;
-    --crust: #dce0e8;
-    --rosewater: #f2d5cf;
-    --paper: #e5e2dd;
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #45475a;
+    --surface0: #282936;
+    --base: #1e1e2e;
+    --mantle: rgba(24, 24, 37, 0.5);
+    --crust: rgba(17, 17, 27, 0.5);
 }
 
 @font-face {
@@ -17,7 +38,6 @@
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--base);
-    background-image: url(assets/background.jpg);
     background-repeat: no-repeat;
     color: var(--text);
     margin: 0;
@@ -57,8 +77,25 @@ li {
     gap: 1rem;
 }
 
-.map-item {
-    background-color: var(--rosewater);
+.map-item-green {
+    background-color: var(--base);
+    padding: 1rem;
+    border-radius: 4px;
+    border: 2px dotted var(--green);
+}
+
+.map-item-red {
+    background-color: var(--base);
+    padding: 1rem;
+    border-radius: 4px;
+    border: 2px dotted var(--red);
+}
+
+.map-item-sky {
+    background-color: var(--base);
+    padding: 1rem;
+    border-radius: 4px;
+    border: 2px dotted var(--sky);
 }
 
 .border {
@@ -75,11 +112,16 @@ a {
     color: var(--text);
     text-decoration: underline;
 }
-/*
+
 a:hover {
-    color: var(--rosewater);
+    color: var(--base);
+    background-color: var(--text);
 }
-*/
+
+hr {
+    color: var(--text);
+}
+
 .footer-text {
     font-size: 0.75rem;
     color: #999;
@@ -112,12 +154,6 @@ a:hover {
 
 .links {
     margin-top: 1rem;
-    
-}
-
-.links a {
-    font-size: 0.875rem;
-    color: #4c4f69;
 }
 
 .recent {
