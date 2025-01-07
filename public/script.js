@@ -21,7 +21,7 @@ async function displayPosts() {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = `posts/${post.file}`;
-        a.textContent = `${post.title} - ${post.date}`;
+        a.textContent = `${post.date} - ${post.title}`;
         li.appendChild(a);
         ul.appendChild(li);
     });
