@@ -23,8 +23,8 @@
     --surface1: #45475a;
     --surface0: #282936;
     --base: #1e1e2e;
-    --mantle: rgba(24, 24, 37, 0.5);
-    --crust: rgba(17, 17, 27, 0.5);
+    --mantle: rgb(24, 24, 37);
+    --crust: rgb(17, 17, 27);
 }
 
 @font-face {
