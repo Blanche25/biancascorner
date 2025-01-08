@@ -37,9 +37,6 @@
 
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    /*
-    background-color: var(--base);
-    */
     background-image: url(assets/pattern.svg);
     background-repeat:repeat;
     color: var(--text);
