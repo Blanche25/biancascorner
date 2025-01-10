@@ -12,6 +12,7 @@
 .site-box > a > span {
     color: var(--darkbrown);
 }
+.site-box .sitefeature .screenshot{display: ''};
 .follow {
 }
 .post-box {
