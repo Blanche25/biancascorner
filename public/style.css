@@ -162,7 +162,7 @@ small {
 .now-playing {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     max-height: 5.5rem;
     
 }
