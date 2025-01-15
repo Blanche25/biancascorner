@@ -47,43 +47,9 @@
     
                 <div class="now-playing-section border" style="padding-bottom: 0;">                    
                     <div class="now-playing">
-                        <div class="song-info">
-                            
-                            <h2>last played</h2>
-                            <div id="lastfm-widget">
-                                <div id="widget">&#127911; <span id="song">&#8987;</span></div>
-                                <div>
-                                    <p><small>powered by <a href="https://github.com/biancarosa/lastfm-last-played"
-                                    target="_blank">@biancarosa/lastfm-last-played</a></small></p>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                let user = 'blanche2504';
-                                let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
-                                let song = document.querySelector('#song');
-                                fetch(url)
-                                    .then(function (response) {
-                                        return response.json()
-                                    }).then(function (json) {
-                                        song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
-                                    });
-                            </script>
-                        </div>
+                        <iframe style="border: none; max-width: fit-content; max-height: fit-content;" src="lastfm-now-playing-main/index.html"></iframe>
                     </div>
                 </div>
-                
-                <!--
-                <div class="border">
-                    <h2>what i've been listening to</h2>
-                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/5db8741a9bc13bb18ee0d4e654a80aee.jpg#5db8741a9bc13bb18ee0d4e654a80aee" class="album-art">
-                    <div class="song-info">
-                        <a href="https://www.last.fm/music/The+Garden/Six+Desperate+Ballads">
-                        <p style="margin-bottom: 0.4rem;"><strong>Six Desperate Ballads </strong><br></p>
-                        </a>
-                        <p style="margin-top: 0rem;">The Garden</p>
-                    </div>
-                </div>
-                -->
                 
                 <div class="links border">
                     <h2>links</h2>

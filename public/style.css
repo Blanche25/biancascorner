@@ -23,8 +23,8 @@
     --surface1: #45475a;
     --surface0: #282936;
     --base: #1e1e2e;
-    --mantle: rgb(24, 24, 37);
-    --crust: rgb(17, 17, 27);
+    --mantle: #181825;
+    --crust: #11111b;
 }
 
 @font-face {
@@ -34,14 +34,31 @@
     font-style: normal;
 }
 
+@keyframes move-pan {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100px 100px;
+    }
+}
 
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-image: url(assets/pattern.svg);
     background-repeat:repeat;
+    animation: move-pan 5s linear infinite;
     color: var(--text);
     margin: 0;
     padding: 2rem;
+}
+
+body::before{
+    transform: rotate(30deg);
+}
+
+.sidebar {
+    max-width: 300px;
 }
 
 .container {
@@ -102,6 +119,7 @@ li {
     padding: 1rem;
     border-radius: 4px;
     border: 2px dotted var(--text);
+    background-color: #11111ba8;
 }
 
 .map-item.wide {
@@ -120,6 +138,10 @@ a:hover {
 
 hr {
     color: var(--text);
+}
+
+small {
+    font-size: 0.8rem;
 }
 
 .footer-text {
@@ -141,6 +163,7 @@ hr {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 1rem;
+    max-height: 5.5rem;
     
 }
 
