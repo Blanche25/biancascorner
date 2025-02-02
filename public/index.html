@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Blanche" />
+        <meta name="description" content="a small personal website" />
+        <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>bianca's corner</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <img  class="header-img" src="assets/painted_mountains.jpg" alt="" />
+            <h1 class="header-text">//bianca's corner</h1>
+        </header>
+        <div class="container">
+
+
+            <div class="grid">
+                <div class="main">
+                    <div style="padding-top: 0rem; padding-bottom: 0rem">
+                        <h2>home</h2>
+                    </div>
+                    <hr />
+                    <div
+                        class="map-grid border"
+                        style="margin-top: 1rem"
+                    >
+                        <div class="map-item-green">
+                            <a href="about.html">about</a>
+                        </div>
+                        <div class="map-item-red">
+                            <a href="blog.html">blog</a>
+                        </div>
+                        <div class="map-item-sky">
+                            <a href="guestbook.html">guestbook</a>
+                        </div>
+                    </div>
+
+                    <div class="border" style="margin-top: 1rem">
+                        <h2>recent blog posts</h2>
+                        <div id="posts-list"></div>
+                        <small><a href="blog.html">see more...</a></small>
+                        <small style="float: right"><a href="rss.xml">[rss feed]</a></small>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div
+                        class="now-playing-section border"
+                        style="padding-bottom: 0"
+                    >
+                        <div class="now-playing">
+                            <iframe
+                                style="
+                                    border: none;
+                                    max-width: fit-content;
+                                    max-height: fit-content;
+                                "
+                                src="lastfm-now-playing-main/index.html"
+                            ></iframe>
+                        </div>
+                    </div>
+
+                    <div class="links border">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="outlinks.html">bunch of links</a></li>
+                            <li>
+                                <a href="https://www.tumblr.com/blanche25">my tumblr (mostly shitposting)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="recent-frame border">
+                        <h2>recent changes</h2>
+                        <iframe
+                            src="recentchanges.html"
+                            style="border: 0px; margin: 0px"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            site inspired by
+            <a target="_blank" href="https://juneish.neocities.org/"
+                ><img src="assets/buttons/webcatz.gif" style="height: 1.5rem"
+            /></a>
+            <br />
+            <a href="https://github.com/Blanche25/biancascorner"
+                >source code on github</a
+            >
+        </div>
+    </body>
+</html>

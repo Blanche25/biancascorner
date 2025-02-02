@@ -1,0 +1,97 @@
+/*Rose Pine Dawn*/
+:root {
+    /* Base colors */
+    --base: #faf4ed;
+    --surface: #fffaf3;
+    --overlay: #f2e9e1;
+
+    /* Text colors */
+    --text: #232133;
+    --subtle: #6e6a86;
+    --muted: #797593;
+
+    /* Highlight colors */
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --rose: #d7827e;
+    --gold: #ea9d34;
+
+    /* Additional shades */
+    --love: #b4637a;
+    --highlight-high: #817c9c;
+    --highlight-med: #9893a5;
+    --highlight-low: #aaa6b9;
+    --foam: #56949f;
+    --pine: #286983;
+    --rose: #d7827e;
+    --iris: #907aa9;
+    --gold: #ea9d34;
+    --surface2: #bbb8c3;
+    --surface1: #ccc9d4;
+    --surface0: #ded9e4;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('../assets/fonts/Iosevka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover {
+    color: var(--base);
+    background-color: var(--text);
+}
+
+hr {
+    color: var(--text);
+}
+
+html {
+    font-family: 'Iosevka';
+    font-size: 1rem;
+    color: var(--text)
+}
+
+table {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    max-height: fit-content;
+}
+
+.refresh {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+a#track {
+    font-weight: bold;
+}
+
+#heart {
+    margin: 0px 10px;
+}
+
+#date {
+    font-size: 0.8rem;
+}

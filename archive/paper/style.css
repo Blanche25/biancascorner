@@ -1,0 +1,174 @@
+:root {
+    --text: #4c4f69;
+    --base: #eff1f5;
+    --crust: #dce0e8;
+    --rosewater: #f2d5cf;
+    --paper: #e5e2dd;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('assets/fonts/Iosevka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--base);
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    color: var(--text);
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.map-item {
+    background-color: var(--rosewater);
+}
+
+.border {
+    padding: 1rem;
+    border-radius: 4px;
+    border: 2px dotted var(--text);
+}
+
+.map-item.wide {
+    grid-column: span 1;
+}
+
+a {
+    color: var(--text);
+    text-decoration: underline;
+}
+/*
+a:hover {
+    color: var(--rosewater);
+}
+*/
+.footer-text {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.album-art {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    float: left;
+}
+
+.now-playing {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.song-info {
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+.song-info a {
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 1rem;
+    
+}
+
+.links a {
+    font-size: 0.875rem;
+    color: #4c4f69;
+}
+
+.recent {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        padding: 1rem;
+    }
+}
+
+.squares {
+    background-image: radial-gradient(circle, var(--text) 0.09rem, transparent 1px),
+                      radial-gradient(circle,var(--text) 0.09rem, transparent 1px);
+    background-size: 20px 20px;
+    padding: 1rem;
+}
+
+.pfp {
+    border-radius: 25%;
+    width: 5.5rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.webrings {
+    margin: auto;
+    width: fit-content;
+}
+
+.buttonwall {
+    margin: auto;
+    padding: 0.5rem;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttonwall img {
+    margin: 0.2rem;
+}
+
+.atabook {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
