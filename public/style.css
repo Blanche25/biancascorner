@@ -1,60 +1,91 @@
+/*Rose Pine Dawn*/
 :root {
-    --rosewater: #f5e0dc;
-    --flamingo: #f2cdcd;
-    --pink: #f5c2e7;
-    --mauve: #cba6f7;
-    --red: #f38ba8;
-    --maroon: #eba0ac;
-    --peach: #fab387;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --teal: #94e2d5;
-    --sky: #89dceb;
-    --sapphire: #74c7ec;
-    --blue: #89b4fa;
-    --lavender: #b4befe;
-    --text: #cdd6f4;
-    --subtext1: #bac2de;
-    --subtext0: #a6adc8;
-    --overlay2: #9399b2;
-    --overlay1: #7f849c;
-    --overlay0: #6c7086;
-    --surface2: #585b70;
-    --surface1: #45475a;
-    --surface0: #282936;
-    --base: #1e1e2e;
-    --mantle: #181825;
-    --crust: #11111b;
+    /* Base colors */
+    --base: #faf4ed;
+    --surface: #fffaf3;
+    --overlay: #f2e9e1;
+
+    /* Text colors */
+    --text: #232133;
+    --subtle: #6e6a86;
+    --muted: #797593;
+
+    /* Highlight colors */
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --rose: #d7827e;
+    --gold: #ea9d34;
+
+    /* Additional shades */
+    --love: #b4637a;
+    --highlight-high: #817c9c;
+    --highlight-med: #9893a5;
+    --highlight-low: #aaa6b9;
+    --foam: #56949f;
+    --pine: #286983;
+    --rose: #d7827e;
+    --iris: #907aa9;
+    --gold: #ea9d34;
+    --surface2: #bbb8c3;
+    --surface1: #ccc9d4;
+    --surface0: #ded9e4;
 }
 
 @font-face {
-    font-family: 'Iosevka';
-    src: url('assets/fonts/Iosevka-Regular.ttf') format('truetype');
+    font-family: "Iosevka";
+    src: url("assets/fonts/Iosevka-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @keyframes move-pan {
     0% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
     100% {
-      background-position: 100px 100px;
+        background-position: 100px 100px;
     }
 }
 
 body {
     font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-image: url(assets/pattern.svg);
-    background-repeat:repeat;
-    animation: move-pan 5s linear infinite;
+    background-color: var(--overlay);
+    background-image: linear-gradient(rgba(234, 157, 52, 0.1), rgba(234, 157, 52, 0.1)), url(assets/background.jpg);
     color: var(--text);
     margin: 0;
     padding: 2rem;
 }
-
-body::before{
+/*
+body::before {
     transform: rotate(30deg);
+}
+*/
+header {
+    width: 100%;
+    height: auto;
+    max-height: 20rem;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 10rem;
+    border-radius: 15px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    color: var(--surface);
 }
 
 .sidebar {
@@ -98,28 +129,27 @@ li {
     background-color: var(--base);
     padding: 1rem;
     border-radius: 4px;
-    border: 2px dotted var(--green);
+    border: 3px solid var(--pine);
 }
 
 .map-item-red {
     background-color: var(--base);
     padding: 1rem;
     border-radius: 4px;
-    border: 2px dotted var(--red);
+    border: 3px solid var(--love);
 }
 
 .map-item-sky {
     background-color: var(--base);
     padding: 1rem;
     border-radius: 4px;
-    border: 2px dotted var(--sky);
+    border: 3px solid var(--foam);
 }
 
 .border {
     padding: 1rem;
     border-radius: 4px;
-    border: 2px dotted var(--text);
-    background-color: #11111ba8;
+    border: 2px solid var(--text);
 }
 
 .map-item.wide {
@@ -146,7 +176,7 @@ small {
 
 .footer-text {
     font-size: 0.75rem;
-    color: var(--overlay2);
+    color: var(--highlight-high);
     margin-top: 2rem;
     text-align: center;
 }
@@ -164,13 +194,13 @@ small {
     gap: 0.5rem;
     margin-bottom: 0rem;
     max-height: 5.5rem;
-    
 }
 
 .song-info {
     font-size: 0.875rem;
     line-height: 1.2;
 }
+
 .song-info a {
     text-decoration: none;
 }
@@ -194,15 +224,19 @@ small {
     .grid {
         grid-template-columns: 1fr;
     }
-    
+
     body {
         padding: 1rem;
     }
 }
 
 .squares {
-    background-image: radial-gradient(circle, var(--text) 0.09rem, transparent 1px),
-                      radial-gradient(circle,var(--text) 0.09rem, transparent 1px);
+    background-image: radial-gradient(
+            circle,
+            var(--text) 0.09rem,
+            transparent 1px
+        ),
+        radial-gradient(circle, var(--text) 0.09rem, transparent 1px);
     background-size: 20px 20px;
     padding: 1rem;
 }
@@ -227,6 +261,7 @@ small {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .buttonwall img {
     margin: 0.2rem;
 }
