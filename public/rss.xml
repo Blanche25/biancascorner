@@ -4,7 +4,7 @@
     <title>Bianca's corner</title>
     <link>https://blanche.nekoweb.org/</link>
     <description>Bianca's blog of random things.</description>
-    
+
     <item>
       <title>oh hey i have a website now</title>
       <link>https://blanche.nekoweb.org//posts/oh%20hey%20i%20have%20a%20website%20now.html</link>
@@ -12,12 +12,21 @@
       <pubDate>Fri, 03 Jan 2025 00:00:00 GMT</pubDate>
       <guid>https://blanche.nekoweb.org//posts/oh%20hey%20i%20have%20a%20website%20now.html</guid>
     </item>
+
     <item>
       <title>when the house leaves or smth</title>
       <link>https://blanche.nekoweb.org//posts/when%20the%20house%20leaves%20or%20smth.html</link>
       <description>when the house leaves or smth</description>
       <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
       <guid>https://blanche.nekoweb.org//posts/when%20the%20house%20leaves%20or%20smth.html</guid>
+    </item>
+
+    <item>
+      <title>when the house leaves or smth</title>
+      <link>https://blanche.nekoweb.org//posts/when%20the%20house%20leaves%20or%20smth.html</link>
+      <description>when the house leaves or smth</description>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 GMT</pubDate>
+      <guid>https://blanche.nekoweb.org//posts/breaking%20nintendo's%20tos%20because%20i%20can.html</guid>
     </item>
   </channel>
 </rss>
