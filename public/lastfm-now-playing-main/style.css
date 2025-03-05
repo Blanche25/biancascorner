@@ -1,35 +1,21 @@
-/*Rose Pine Dawn*/
 :root {
     /* Base colors */
-    --base: #faf4ed;
-    --surface: #fffaf3;
-    --overlay: #f2e9e1;
+    --base: #181515;
+    --surface: #221E1E;
+    --overlay: #423939;
 
     /* Text colors */
-    --text: #232133;
+    --text: #F4E6D2;
     --subtle: #6e6a86;
     --muted: #797593;
 
     /* Highlight colors */
-    --pine: #286983;
-    --foam: #56949f;
-    --iris: #907aa9;
-    --rose: #d7827e;
-    --gold: #ea9d34;
-
-    /* Additional shades */
-    --love: #b4637a;
-    --highlight-high: #817c9c;
-    --highlight-med: #9893a5;
-    --highlight-low: #aaa6b9;
-    --foam: #56949f;
-    --pine: #286983;
-    --rose: #d7827e;
-    --iris: #907aa9;
-    --gold: #ea9d34;
-    --surface2: #bbb8c3;
-    --surface1: #ccc9d4;
-    --surface0: #ded9e4;
+    --red: #CA3F3F;
+    --orange: #E46A3A;
+    --yellow: #E39C45;
+    --green: #989F56;
+    --blue: #4A5A8D;
+    --purple: #9F569A;
 }
 
 @font-face {
